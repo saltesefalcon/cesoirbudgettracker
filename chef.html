@@ -120,14 +120,18 @@ button.ghost{background:transparent}
 <script>
 /* ---------------- Firebase init ---------------- */
 const firebaseConfig = {
-  apiKey: "AIzaSyDl7NhJHjm1wp0LwIWN-mtCDh_WD6I-MRA",
-  authDomain: "cesoir-budget-tracker.firebaseapp.com",
-  projectId: "cesoir-budget-tracker",
-  storageBucket: "cesoir-budget-tracker.firebasestorage.app",
-  messagingSenderId: "331061494606",
-  appId: "1:331061494606:web:8edb403b944002ed80141f"
+  apiKey: "AIzaSyD9TpOdUZkr1kDkZ82JDlrF7hkFVwVkAmU",
+  authDomain: "ce-soir-budget-tracker.firebaseapp.com",
+  projectId: "ce-soir-budget-tracker",
+  storageBucket: "ce-soir-budget-tracker.firebasestorage.app",
+  messagingSenderId: "800113882524",
+  appId: "1:800113882524:web:a8f9aebe537ed941060459"
 };
-const OWNER_UID = "vv2z07G4g5ZG8wsLgJQGkQFxFaf2";
+// support multiple owners
+const OWNER_UIDS = [
+  "SJdtRUwivORM7YT3MJE6dlgXciF3",   // first UID
+  "ANOTHER_UID_HERE"                // second UID
+];
 
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
